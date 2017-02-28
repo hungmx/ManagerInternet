@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    android:layout_marginTop="30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow
+        android:id="@+id/rowid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tvBId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#00FF00"
+            android:textStyle="bold"
+            android:layout_span="2"
+            android:text="ID khach hang"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/rowten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_below="@+id/tvClientId"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Khách Hàng"
+            />
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_below="@+id/txtid"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ten"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/rowtien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng Tiền: "
+            />
+        <TextView
+            android:id="@+id/tvMoney"
+            android:layout_below="@+id/txtid"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tổng Tiền"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/rowpayemnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày Thanh Toán: "
+            />
+        <TextView
+            android:id="@+id/tvPaymentDate"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Goi dich vu"/>
+    </TableRow>
+    </TableLayout>

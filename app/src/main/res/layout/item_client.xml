@@ -1,0 +1,64 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItemClient"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="4dp"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textSize="20sp"
+        android:textColor="#00FF00"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgClient"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_client"
+        />
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hau due mat troi"
+        android:textSize="18sp"
+        android:textColor="#0000FF"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/btEdit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/edit"
+        />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Goi dich vu"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tvPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hih thuc thanh toan"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.mxhung.managerinternet.fragment.BillFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_marginLeft="5dp"
+                    android:layout_marginTop="?attr/actionBarSize">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btl"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DANH SÁCH THANH TOÁN"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danh sách khách hàng rỗng"
+            android:layout_below="@+id/etSearch"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+        <ListView
+            android:id="@+id/lvBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
+
+</FrameLayout>

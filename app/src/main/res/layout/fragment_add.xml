@@ -1,0 +1,208 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.mxhung.managerinternet.fragment.AddFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        >
+        <ScrollView
+            android:id="@+id/scroll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btl"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FORM ĐĂNG KÝ"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#0000FF"
+                    />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+                    android:layout_marginTop="30dp">
+                    <TableRow
+                        android:id="@+id/row1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tên Khách Hàng"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            />
+                        <EditText
+                            android:id="@+id/etName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="11"
+                            android:hint="Nhập tên khách hàng"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/row2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Số Điện Thoại"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            />
+                        <EditText
+                            android:id="@+id/etPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="11"
+                            android:inputType="number"
+                            android:hint="Nhập SĐT từ 8 đến 11 kí tự"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/row3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Địa chỉ hiện tại"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            />
+                        <EditText
+                            android:id="@+id/etAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="11"
+                            android:hint="Nhập địa chỉ khách hàng"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/row4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thành Phố"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            />
+                        <AutoCompleteTextView
+                            android:id="@+id/etCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="11"
+                            android:hint="Nhập tên thành phố"
+                            />
+                    </TableRow>
+                </TableLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gói dịch vụ"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:background="#00FF00"
+                    />
+                <RadioGroup
+                    android:id="@+id/rdgService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <RadioButton
+                        android:id="@+id/rdFast15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fast 15"
+                        android:layout_weight="1"
+                        />
+                    <RadioButton
+                        android:id="@+id/rdFast20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fast 20"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        android:id="@+id/rdFast30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fast 30"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thanh Toán"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:background="#00FF00"
+                    />
+                <RadioGroup
+                    android:id="@+id/rdgPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <RadioButton
+                        android:id="@+id/rd1month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hàng Tháng"
+                        android:layout_weight="1"
+                        />
+                    <RadioButton
+                        android:id="@+id/rd6month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6 Thang"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        android:id="@+id/rd12month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12 Thang"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:text="ĐĂNG KÝ"
+            android:textColor="#FFFF"
+            android:layout_below="@+id/scroll1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+</FrameLayout>

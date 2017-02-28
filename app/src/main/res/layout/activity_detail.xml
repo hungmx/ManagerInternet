@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btl"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HÓA ĐƠN THANH TOÁN"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_marginTop="30dp">
+            <TableRow
+                android:id="@+id/rowid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/tvClientId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#00FF00"
+                    android:textStyle="bold"
+                    android:layout_span="2"
+                    android:text="ID khach hang"/>
+                <CheckBox
+                    android:id="@+id/chkBill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/rowten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_below="@+id/tvClientId"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên Khách Hàng"
+                    />
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_below="@+id/txtid"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Ten"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/rowsdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số Điện Thoại: "
+                    />
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="SDT"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/rowdc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_below="@+id/txtid"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Địa Chỉ: "
+                    />
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Địa chỉ"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/rowgoidv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gói dịch vụ: "
+                    />
+                <TextView
+                    android:id="@+id/tvService"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Goi dich vu"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/rowtt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thanh Toán: "
+                    />
+                <TextView
+                    android:id="@+id/tvPayment"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Thanh Toán"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/rowdk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày Đăng Ký: "
+                    />
+                <TextView
+                    android:id="@+id/tvStartDate"
+                    android:layout_below="@+id/txtid"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Ngày Đăng Ký"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/rowkt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày Thanh Toán: "
+                    />
+                <TextView
+                    android:id="@+id/tvEndDate"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Ngày Kết Thúc"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/rowtien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng Tiền: "
+                    />
+                <TextView
+                    android:id="@+id/tvMoney"
+                    android:layout_below="@+id/txtid"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Tổng Tiền"/>
+            </TableRow>
+
+        </TableLayout>
+        <TableRow
+            android:id="@+id/rowghichu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ghi Chú: "
+                />
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_below="@+id/txtid"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""/>
+        </TableRow>
+        <ImageView
+            android:id="@+id/imgtksyou"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/camon"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+

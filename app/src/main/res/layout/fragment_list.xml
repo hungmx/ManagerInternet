@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.mxhung.managerinternet.fragment.ListFragment">
+
+    <RelativeLayout
+        android:id="@+id/rlSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:visibility="visible">
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tìm kiếm sách"
+            android:paddingLeft="8dp"
+            android:drawableLeft="@drawable/ic_search_default"
+            />
+        <Button
+            android:id="@+id/btClean"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_delete"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/ibtSpeech"
+            android:layout_marginTop="15dp"
+            />
+        <ImageButton
+            android:id="@+id/ibtSpeech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_microphone"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            />
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách khách hàng rỗng"
+        android:layout_below="@+id/etSearch"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/lvListClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSearch"
+        android:clickable="true"
+        android:focusable="true"
+        ></ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

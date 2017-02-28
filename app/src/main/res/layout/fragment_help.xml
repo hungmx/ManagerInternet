@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.mxhung.managerinternet.fragment.HelpFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="
+              Phần mềm được thanh toán dịch vụ internet Viettel với các chức năng sau :\n
+
+              * Đăng Ký:\n
+              - Tên :Bao gồm các chữ cái độ dài lớn hơn 3 ký tự, không chứa kí tự đặc biệt.\n
+              - Địa Chỉ Hiện Tại: Địa chỉ nơi mình đang ở\n
+              - Địa Chỉ : Gồm 63 tỉnh thành phố trên cả nước\n
+              - Số Điện Thoại : Là số di động bao gồm các con số từ 0 - 9 bắt đầu bằng :
+                               Có độ dài từ 8 tới 11 chữ số\n
+              - Gói Dịch Vụ: Có 3 gói dịch vụ là Fash15, Fasf20 và Fash30\n
+              - Thanh toán: Có 3 hình thức là thanh toán hàng tháng, 3 tháng và 6 tháng\n
+              - Khách hàng ở các tỉnh thành khác Hà Nội và TP HCM sẽ được giảm 5% khi đăng ký\n
+              - Khách hàng có thời gian sử dụng trên 1 năm sẽ được giảm 5%\n
+              * Khách Hàng\n
+              Trong phần màn hình sẽ load danh sách khách hàng và màn hình sẽ cho
+                     ta 2 icon lựa chọn là : Sửa, Xóa, Xuất Hóa Đơn .\n
+              - Sửa : Nhân viên có thể sửa lại các thông tin khách hàng đã đăng ký\n
+              - Xóa : Nhấn lâu vào nhân viên muốn xóa để xóa\n
+              - Xuất Hóa Đơn: Nhân viên sẽ xuất hóa đơn khách hàng cần thanh toán"
+                android:textSize="18sp"
+
+
+                />
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
